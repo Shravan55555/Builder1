@@ -3,4 +3,4 @@ cd ~/work
 
 . build/envsetup.sh
 lunch afterlife_RMX1901-user
-m bacon
+mka bacon
