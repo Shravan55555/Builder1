@@ -1,4 +1,5 @@
 #!/bin/bash
 cd ~/work
 
-./rom-build.sh RMX1901
+. build/envsetup.sh
+goafterlife RMX1901
