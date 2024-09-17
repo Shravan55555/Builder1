@@ -2,4 +2,5 @@
 cd ~/work
 
 . build/envsetup.sh
-goafterlife RMX1901
+lunch afterlife_RMX1901-ap2a-user
+mka bacon
