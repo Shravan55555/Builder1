@@ -8,6 +8,8 @@ repo init --depth=1 -u $MANIFEST
 git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 /opt/crave/resync.sh
+git clone https://gitea.com/AfterlifeOS/prebuilts_sdk.git -b 14 prebuilts/sdk
+git clone https://gitea.com/AfterlifeOS/system_core.git -b 14 system/core
 #wget https://raw.githubusercontent.com/accupara/docker-images/master/aosp/common/resync.sh
 #rm -rf .android-certs && git clone https://github.com/Legendleo90/private_keys .android-certs
 #cp .android-certs/* vendor/aosp/signing/keys/
