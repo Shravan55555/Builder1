@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/DerpFest-AOSP/manifest.git -b 15
+    MANIFEST: https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
     DEVICE: RMX1901
     OEM: realme
     LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git -b derp14
