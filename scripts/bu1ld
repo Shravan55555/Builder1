@@ -2,5 +2,5 @@
 cd ~/work
 
 . build/envsetup.sh
-lunch afterlife_RMX1901-user
+lunch pixelage_RMX1901-ap3a-user
 mka bacon
