@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
+    MANIFEST: https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
     DEVICE: RMX1901
     OEM: realme
     LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest.git -b main
