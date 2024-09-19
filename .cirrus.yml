@@ -1,8 +1,8 @@
 env:
-    MANIFEST: https://github.com/Los-Ext/manifest.git -b lineage-21.0 --git-lfs -g default,-mips,-darwin,-notdefault
+    MANIFEST: https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests --depth 1 -b ext
+    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests --depth 1 -b afterlife
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
