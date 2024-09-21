@@ -1,6 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch lineage_RMX1901-ap2a-user
-make install clean
-mka bacon
+lunch yaap_RMX1901-user
+m yaap
