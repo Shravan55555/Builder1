@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/work
-
-. build/envsetup.sh
-goafterlife RMX1901
+source build/envsetup.sh
+lunch lineage_RMX1901-ap2a-user
+make install clean
+mka bacon
