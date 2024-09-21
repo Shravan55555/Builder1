@@ -1,8 +1,8 @@
 env:
-    MANIFEST: https://github.com/ProjectSakura/android.git -b 14 --git-lfs
+    MANIFEST: https://github.com/yaap/manifest.git -b fifteen --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests --depth 1 -b sakura
+    LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest --depth 1 -b main
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
