@@ -2,7 +2,7 @@ env:
     MANIFEST: https://github.com/DerpFest-AOSP/manifest.git -b 15
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest --depth 1 -b test
+    LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest --depth 1 -b main
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
