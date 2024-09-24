@@ -4,5 +4,5 @@ source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES := true
 export BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-lunch yaap_RMX1901-user
-m yaap
+lunch derp_RMX1901-user
+mka derp
