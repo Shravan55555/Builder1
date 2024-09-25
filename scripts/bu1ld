@@ -1,8 +1,6 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES := true
-export BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-lunch derp_RMX1901-user
-mka derp
+
+lunch lineage_RMX1901-user
+mka everest
