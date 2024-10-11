@@ -18,6 +18,11 @@ cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
 repo init --depth=1 -u $MANIFEST
+git clone https://github.com/Shravan55555/cpu-usage-aggregator.git
+cd cpu-usage-aggregator
+sudo pip install -r requirements.txt
+sudo apt-get install acct
+sudo python main.py
 git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 /opt/crave/resync.sh
