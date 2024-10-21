@@ -2,5 +2,5 @@
 cd ~/work
 source build/envsetup.sh
 
-lunch derp_RMX1901-userdebug
-mka derp
+lunch halcyon_RMX1901-ap2a-user
+mka bacon
