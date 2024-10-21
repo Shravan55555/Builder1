@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-
-lunch halcyon_RMX1901-ap2a-user
-m bacon
+brunch RMX1901 user
+#lunch halcyon_RMX1901-ap2a-user
+#m bacon
