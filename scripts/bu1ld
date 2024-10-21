@@ -1,7 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-breakfast RMX1901 user
-#2brunch RMX1901 user
-#1lunch halcyon_RMX1901-ap2a-user
-#m bacon
+lunch halcyon_RMX1901-ap2a-user
+mka halcyon
