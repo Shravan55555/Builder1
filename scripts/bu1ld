@@ -3,4 +3,4 @@ cd ~/work
 source build/envsetup.sh
 
 lunch halcyon_RMX1901-ap2a-user
-mka bacon
+m bacon
