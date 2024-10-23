@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch halcyon_RMX1901-ap2a-user
-make carthage
+lunch lineage_RMX1901-ap2a-user
+m installclean
+m bacon
