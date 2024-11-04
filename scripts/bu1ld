@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-breakfast RMX1901
-mka genesis
+lunch derp_RMX1901-user
+make installclean
+mka derp
