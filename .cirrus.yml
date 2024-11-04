@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/GenesisOS/manifest.git -b verve --git-lfs
+    MANIFEST: https://github.com/DerpFest-AOSP/manifest.git -b 15
     DEVICE: RMX1901
     OEM: realme
     LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest.git --depth 1 -b main
