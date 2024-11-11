@@ -1,6 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch derp_RMX1901-user
-make installclean
-mka derp
+lunch aosp_RMX1901-ap3a-userdebug
+mka bacon
