@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch aosp_RMX1901-ap3a-userdebug
-mka bacon
+lunch clover_RMX1901-ap3a-userdebug
+mka clover -j$(nproc --all)
