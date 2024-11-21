@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch clover_RMX1901-ap3a-userdebug
-mka clover -j$(nproc --all)
+lunch lineage_RMX1901-user
+m installclean
+m bacon
