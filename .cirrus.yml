@@ -2,7 +2,7 @@ env:
     MANIFEST: https://github.com/Los-Ext/manifest.git -b 14 --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shraansayz/local_manifests.git --depth 1 -b ext
+    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b ext
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
