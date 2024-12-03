@@ -1,8 +1,8 @@
 env:
-    MANIFEST: https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
+    MANIFEST: https://github.com/PixelOS-Fifteen/manifest.git -b fifteen --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b pixelage
+    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b pixel
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
