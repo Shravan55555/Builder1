@@ -1,6 +1,4 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-lunch aosp_RMX1901-ap3a-user
-make installclean
-mka bacon
+brunch RMX1901
