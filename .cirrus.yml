@@ -2,7 +2,7 @@ env:
     MANIFEST: https://github.com/GenesisOS/manifest.git -b verve --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b genesis
+    LOCAL_MANIFEST: https://github.com/Shravan55555/local_manifest.git --depth 1 -b main
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
