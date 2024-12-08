@@ -1,8 +1,8 @@
 env:
-    MANIFEST: https://github.com/VoltageOS/manifest.git -b 15 --git-lfs
+    MANIFEST: https://github.com/GenesisOS/manifest.git -b verve --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b vol
+    LOCAL_MANIFEST: https://github.com/shravansayz/local_manifests.git --depth 1 -b genesis
     #TARGET: evolution
     #LUNCH_COMBO: lineage_${DEVICE}-user
     OUTPUT: P*.zip
@@ -15,7 +15,7 @@ task:
   name: "build"
   timeout_in: 120m
   container:
-      image: accupara/aosp:ubuntu
+      image: accupara/aosp:baseline
       cpu: 8
       memory: 32G
   Storage-Checker_script:
