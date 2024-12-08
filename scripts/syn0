@@ -22,6 +22,7 @@ repo init --depth=1 -u $MANIFEST
 git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 /opt/crave/resync.sh
+cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 # Auto-sign build
 rm -rf vendor/lineage-priv/keys
 wget https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh
