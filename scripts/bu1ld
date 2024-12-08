@@ -1,4 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-brunch RMX1901
+breakfast RMX1901
+mka genesis
