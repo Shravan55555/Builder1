@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ~/work
 source build/envsetup.sh
-breakfast RMX1901
-mka genesis
+lunch aosp_RMX1901-ap3a-user
+mka bacon
