@@ -18,7 +18,7 @@ mkdir -p ~/work
 cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
-repo init --depth=1 -u https://github.com/GenesisOS/manifest.git -b verve --git-lfs
+repo init --depth=1 -u https://github.com/PixelOS-Fifteen/manifest.git -b fifteen --git-lfs
 #git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 
@@ -27,7 +27,7 @@ end="\033[0m"
 
 #  DT
 echo -e "${color}Cloning Device Sources${end}"
-git clone -b 15-volt https://github.com/shravansayz/device_realme_RMX1901.git device/realme/RMX1901
+git clone -b wip https://github.com/shravansayz/device_realme_RMX1901.git device/realme/RMX1901
 
 # Vendor & Kernel Sources
 echo -e "${color}Cloning vendor${end}"
