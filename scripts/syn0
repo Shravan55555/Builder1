@@ -18,7 +18,7 @@ mkdir -p ~/work
 cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
-repo init --depth=1 -u https://github.com/PixelOS-Fifteen/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
 #git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 
