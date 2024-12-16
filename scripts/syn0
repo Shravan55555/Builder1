@@ -49,6 +49,12 @@ sleep 1
 
 /opt/crave/resync.sh
 
+rm -rf frameworks/base
+git clone -b fifteen https://github.com/Krishna-s-Hub/pos_base.git frameworks/base --depth=1
+ 
+rm -rf packages/apps/Settings
+git clone -b fifteen https://github.com/Krishna-s-Hub/pos_Settings.git packages/apps/Settings --depth=1
+
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 # Auto-sign build
 rm -rf vendor/lineage-priv/keys
