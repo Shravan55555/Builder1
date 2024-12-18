@@ -18,7 +18,7 @@ mkdir -p ~/work
 cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
-repo init -u https://github.com/PixelOS-Fifteen/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --git-lfs
 #git clone $LOCAL_MANIFEST .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 
@@ -27,7 +27,7 @@ end="\033[0m"
 
 #  DT
 echo -e "${color}Cloning Device Sources${end}"
-git clone -b wip https://github.com/shravansayz/device_realme_RMX1901.git device/realme/RMX1901
+git clone -b test https://github.com/shravansayz/device_realme_RMX1901.git device/realme/RMX1901
 
 # Vendor & Kernel Sources
 echo -e "${color}Cloning vendor${end}"
@@ -49,11 +49,6 @@ sleep 1
 
 /opt/crave/resync.sh
 
-rm -rf frameworks/base
-git clone -b fifteen https://github.com/Krishna-s-Hub/pos_base.git frameworks/base --depth=1
- 
-rm -rf packages/apps/Settings
-git clone -b fifteen https://github.com/Krishna-s-Hub/pos_Settings.git packages/apps/Settings --depth=1
 
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 # Auto-sign build
