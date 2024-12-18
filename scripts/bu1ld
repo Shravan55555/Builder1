@@ -2,5 +2,5 @@
 
 cd ~/work
 source build/envsetup.sh
-lunch aosp_RMX1901-ap3a-user
-mka bacon
+lunch derp_RMX1901-user
+mka derp
