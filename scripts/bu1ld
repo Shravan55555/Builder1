@@ -2,5 +2,5 @@
 
 cd ~/work
 source build/envsetup.sh
-lunch derp_RMX1901-user
-mka derp
+lunch lineage_sky-ap3a-user
+m evolution
