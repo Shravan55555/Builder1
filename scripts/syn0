@@ -18,12 +18,9 @@ mkdir -p ~/work
 cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
-repo init -u https://github.com/PixelExperience-LEGACY-edition/manifest.git -b thirteen-plus --depth=1 --git-lfs
-#git clone https://github.com/shravansayz/local_manifests.git -b derp15 .repo/local_manifests
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs
+git clone https://github.com/shravansayz/local_manifests.git -b los22 .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
-git clone https://github.com/shravansayz/device_realme_RMX1901_13.git -b pex device/realme/RMX1901
-git clone https://github.com/shravansayz/vendor_realme_RMX1901.git -b 13 vendor/realme/RMX1901
-git clone https://github.com/shravansayz/kernel_realme_RMX1901_T_A13.git -b x.337_ksu kernel/realme/RMX1901
 /opt/crave/resync.sh
 
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5 && cd ../../..
