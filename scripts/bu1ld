@@ -3,4 +3,4 @@
 cd ~/work
 source build/envsetup.sh
 lunch lineage_RMX1901-ap4a-user
-mka bacon -j$(nproc --all) | tee log.txt
+mka bacon
