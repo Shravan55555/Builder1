@@ -22,7 +22,8 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs
 git clone https://github.com/shravansayz/local_manifests.git -b los22 .repo/local_manifests
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 /opt/crave/resync.sh
-
+cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash - &&
+cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -s next-susfs-4.9 && cd ../../..
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5 && cd ../../..
 # Auto-sign build
 #rm -rf vendor/lineage-priv/keys
