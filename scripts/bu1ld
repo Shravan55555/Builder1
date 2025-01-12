@@ -2,5 +2,5 @@
 
 cd ~/work
 source build/envsetup.sh
-lunch aosp_RMX1901-ap4a-user
-mka bacon
+lunch clover_RMX1901-ap4a-user
+mka clover
