@@ -18,9 +18,9 @@ mkdir -p ~/work
 cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 15-qpr1 --git-lfs
+#repo init -u https://github.com/The-Clover-Project/manifest.git -b 15-qpr1 --git-lfs
 git clone https://github.com/shravansayz/local_manifests.git -b clo .repo/local_manifests
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
+#repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 /opt/crave/resync.sh
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash - && curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -s next-susfs-4.9 && cd ../../..
 #cd kernel/realme/sdm710 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5 && cd ../../..
