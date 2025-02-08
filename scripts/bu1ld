@@ -2,5 +2,5 @@
 
 cd ~/work
 source build/envsetup.sh
-lunch clover_RMX1901-ap4a-user
-mka clover
+riseup RMX1901 user
+rise b
