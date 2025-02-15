@@ -19,7 +19,7 @@ cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
 # Change yourUsername with your github username
-wget https://raw.githubusercontent.com/Shravan55555/script/refs/heads/main/build.sh
+wget https://raw.githubusercontent.com/Shravan55555/script/main/build.sh
 bash build.sh
 #repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 #git clone https://github.com/shravansayz/local_manifests.git -b rise .repo/local_manifests
