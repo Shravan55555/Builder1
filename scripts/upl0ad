@@ -1,23 +1,29 @@
 #!/bin/bash
 
 cd /tmp
-ccache-4.10-linux-x86_64.tar.xz
+
+# Function to compress the ccache folder
 com () 
 { 
     tar --use-compress-program="pigz -k -$2 " -cf $1.tar.xz $1
-}
+} 
 
+# Compress ccache with compression level 1
 time com ccache 1
 
-mkdir -p ~/.config/rclone
-echo "$CLO_1" > ~/.config/rclone/rclone.conf
-time rclone copy ccache.tar.gz $CLO -P
-
+# Upload to GoFile using upload.sh
 if [ "$ROM_U" == "1" ]; then
-cd ~/work/out/target/product/$DEVICE
-wget https://github.com/Sushrut1101/GoFile-Upload/raw/master/upload.sh
-chmod +x upload.sh
-ls
-./upload.sh $OUTPUT
-./upload.sh boot.img
+    cd ~/work/out/target/product/$DEVICE
+
+    # Download GoFile upload script if not already present
+    wget https://github.com/Sushrut1101/GoFile-Upload/raw/master/upload.sh
+    chmod +x upload.sh
+    ls
+
+    # Upload the compressed ccache archive to GoFile
+    ./upload.sh /tmp/ccache.tar.xz
+
+    # Optionally upload additional files like boot.img
+    ./upload.sh boot.img
 fi
+
