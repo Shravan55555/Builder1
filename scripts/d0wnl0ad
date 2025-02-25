@@ -1,39 +1,87 @@
 #!/bin/bash
-chk() {
-df -h
-nproc
-cat /etc/os*
-env
-}
-sudo apt update &&sudo apt install pigz wget
-sudo apt install jq -y
-sudo apt upgrade
-c_down() {
-cd /tmp
-wget https://github.com/ccache/ccache/releases/download/v4.10/ccache-4.10-linux-x86_64.tar.xz
-tar -xf ccache-4.10-linux-x86_64.tar.xz
-cd ccache-4.10-linux-x86_64
-#sudo make install
-#ccache --version
-sudo cp ccache /usr/bin/
-sudo ln -sf ccache /usr/bin/gcc
-sudo ln -sf ccache /usr/bin/g++
-cd ..
-ccache --version
 
-export USE_CCACHE=1
-sleep 1
-export CCACHE_DIR=$PWD/cc
-sleep 1 
-ccache -s
-ccache -F 0
-ccache -M 0
-echo $CCACHE_DIR
-ccache -s
+# Function to check system status
+chk() {
+    df -h
+    nproc
+    cat /etc/os*
+    env
+}
+
+# Install necessary tools
+sudo apt update && sudo apt install pigz wget jq curl -y
+sudo apt upgrade
+
+# Download and install ccache
+c_down() {
+    cd /tmp
+    wget https://github.com/ccache/ccache/releases/download/v4.10/ccache-4.10-linux-x86_64.tar.xz
+    tar -xf ccache-4.10-linux-x86_64.tar.xz
+    cd ccache-4.10-linux-x86_64
+    sudo cp ccache /usr/bin/
+    sudo ln -sf ccache /usr/bin/gcc
+    sudo ln -sf ccache /usr/bin/g++
+    cd ..
+    ccache --version
+
+    # Enable CCACHE
+    export USE_CCACHE=1
+    sleep 1
+    export CCACHE_DIR=$PWD/cc
+    sleep 1
+    ccache -s
+    ccache -F 0
+    ccache -M 0
+    echo $CCACHE_DIR
+    ccache -s
+}
+
+# Cache Upload Function using Gofile API
+upload_cache() {
+    # Ensure cache directory is present
+    if [ -d "$CCACHE_DIR" ]; then
+        echo "Uploading cache to Gofile..."
+        zip -r ccache.zip $CCACHE_DIR
+        # Upload the cache file to Gofile
+        response=$(curl -s -X POST -F "file=@ccache.zip" https://store1.gofile.io/uploadFile)
+        # Extract the file URL from the JSON response
+        file_url=$(echo $response | jq -r '.data.downloadPage')
+        echo "Cache uploaded. Download URL: $file_url"
+        rm ccache.zip
+    else
+        echo "No cache directory found."
+    fi
+}
+
+# Cache Restore Function using Gofile API
+restore_cache() {
+    # Check if a previous cache upload URL exists
+    echo "Enter the Gofile download URL to restore cache (or leave empty to skip):"
+    read file_url
+    if [ -n "$file_url" ]; then
+        echo "Restoring cache from Gofile..."
+        download_link=$(echo $file_url | sed 's/download\/\([a-zA-Z0-9]*\)$/file\/\1/g')
+        curl -s -o ccache.zip $download_link
+        unzip ccache.zip -d $CCACHE_DIR
+        rm ccache.zip
+        echo "Cache restored successfully!"
+    else
+        echo "No URL provided, skipping cache restore."
+    fi
 }
 
 echo "Checking free space"
 chk
+
 echo "Downloading ccache"
 c_down
+
+# Restore cache if available
+restore_cache
+
+# Perform the compilation steps
+
+# Upload cache after the build
+upload_cache
+
 echo "Done"
