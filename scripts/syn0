@@ -21,8 +21,8 @@ git config --global user.email "srasidda.ks@gmail.com"
 # Change yourUsername with your github username
 #wget https://raw.githubusercontent.com/Shravan55555/script/main/build.sh
 #bash build.sh
-curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/derp.sh | bash
-#curl -s https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/orion.sh | bash -s
+#curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/derp.sh | bash
+curl -s https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh | bash
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/pos/orionos.sh | bash
 #repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 #git clone https://github.com/shravansayz/local_manifests.git -b rise .repo/local_manifests
