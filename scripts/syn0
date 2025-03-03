@@ -19,9 +19,9 @@ cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
 # Change yourUsername with your github username
-wget https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh
-chmod +x build.sh
-bash build.sh -s -c
+curl -o https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh | bash
+#chmod +x build.sh
+#bash build.sh -s -c
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/derp.sh | bash
 #curl -s https://raw.githubusercontent.com/shravansayz/Build_script/refs/heads/main/derp.sh | bash
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/pos/orionos.sh | bash
