@@ -20,14 +20,16 @@ git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
 # Change yourUsername with your github username
 #git clone https://github.com/Shravan55555/builddroid && cd builddroid && chmod +x builddroid.sh && ./builddroid.sh
-#curl -s https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/evox.sh | bash
+# Sync and Clean
+#curl -L https://raw.githubusercontent.com/YOUR_GITHUB_REPO/build.sh | bash -s -- -s -c
+curl -L https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/derp.sh | bash -s -- -s -c
 #chmod +x build.sh
 #bash build.sh -s -c
 #wget https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh
 #bash build.sh -s
 #curl -s https://raw.githubusercontent.com/shravansayz/Build_script/refs/heads/main/derp.sh | bash
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/axion.sh | bash
-curl https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/main.sh | bash
+#curl https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/main.sh | bash
 #repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 #git clone https://github.com/shravansayz/local_manifests.git -b rise .repo/local_manifests
 #repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
