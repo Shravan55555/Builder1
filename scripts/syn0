@@ -22,7 +22,7 @@ git config --global user.email "srasidda.ks@gmail.com"
 #git clone https://github.com/Shravan55555/builddroid && cd builddroid && chmod +x derp.sh && ./derp.sh -s -c
 # Sync and Clean
 #curl -L https://raw.githubusercontent.com/YOUR_GITHUB_REPO/build.sh | bash -s -- -s -c
-curl https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/derp.sh && chmod +x derp.sh && bash derp.sh -s -c
+curl https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/derp.sh | bash derp.sh -s -c
 #chmod +x build.sh
 #bash build.sh -s -c
 #wget https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh
