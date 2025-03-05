@@ -27,7 +27,7 @@ git config --global user.email "srasidda.ks@gmail.com"
 #bash build.sh -s
 #curl -s https://raw.githubusercontent.com/shravansayz/Build_script/refs/heads/main/derp.sh | bash
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/axion.sh | bash
-curl https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/orion.sh | bash
+curl https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/main.sh | bash
 #repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 #git clone https://github.com/shravansayz/local_manifests.git -b rise .repo/local_manifests
 #repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
