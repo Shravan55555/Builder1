@@ -19,7 +19,8 @@ cd ~/work
 git config --global user.name "Shravan55555"
 git config --global user.email "srasidda.ks@gmail.com"
 # Change yourUsername with your github username
-curl -s https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/evox.sh | bash
+git clone https://github.com/Shravan55555/builddroid && chmod +x builddroid.sh && ./builddroid.sh
+#curl -s https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/evox.sh | bash
 #chmod +x build.sh
 #bash build.sh -s -c
 #curl -s https://raw.githubusercontent.com/shravansayz/build_scripts/refs/heads/pos/derp.sh | bash
