@@ -24,7 +24,7 @@ git config --global user.email "srasidda.ks@gmail.com"
 #curl -L https://raw.githubusercontent.com/YOUR_GITHUB_REPO/build.sh | bash -s -- -s -c
 wget https://raw.githubusercontent.com/Shravan55555/BuildTest/refs/heads/main/crave.sh
 chmod +x crave.sh
-bash crave.sh
+bash crave.sh -s
 #wget https://raw.githubusercontent.com/Shravan55555/test/refs/heads/main/build.sh
 #bash build.sh -s
 #curl -s https://raw.githubusercontent.com/shravansayz/Build_script/refs/heads/main/derp.sh | bash
